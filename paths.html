@@ -24,7 +24,6 @@
             <li class="nav-item active">
                 <a class="nav-link" href="add_freight.html">Dodaj ładunek<span class="sr-only">(current)</span></a>
             </li>
-
             <li class="nav-item active">
                 <a class="nav-link" href="paths.html">Wyznacz trasę<span class="sr-only">(current)</span></a>
             </li>
@@ -34,14 +33,15 @@
 </nav>
 
 <div id="content">
-
+</div>
+<div id="content_result" style="margin-top: 30px;">
 </div>
 
 <script src="js/index.js"></script>
 <script>
     let logoutBtn = document.getElementById("logout");
     logoutBtn.addEventListener("click", logout);
-    displayAddFreights();
+    displayGetPaths();
 </script>
 </body>
 </html>
