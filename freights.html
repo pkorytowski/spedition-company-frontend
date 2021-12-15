@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spedition Company</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="main_page.html">Miasta<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="freights.html">Ładunki<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="add_freight.html">Dodaj ładunek<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Dodaj miasto<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Wyznacz trasę<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <button class="btn btn-outline-success my-2 my-sm-0" id="logout">Log Out</button>
+    </div>
+</nav>
+
+<div id="content">
+</div>
+
+<script src="js/index.js"></script>
+<script>
+    let logoutBtn = document.getElementById("logout");
+    logoutBtn.addEventListener("click", logout);
+    displayFreights();
+</script>
+</body>
+</html>
