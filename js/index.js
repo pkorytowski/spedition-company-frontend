@@ -274,7 +274,7 @@ const addFreight = () => {
     }
 }
 
-const url = 'http://localhost:5000';
+const url = 'https://chmurki-flask.herokuapp.com';
 
 async function getData(path=''){
     let addr = url + path;
